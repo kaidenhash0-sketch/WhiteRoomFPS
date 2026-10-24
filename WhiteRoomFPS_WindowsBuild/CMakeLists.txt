@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(WhiteRoomFPS LANGUAGES CXX)
+add_executable(WhiteRoomFPS WIN32 WhiteRoomFPS.cpp)
+target_compile_features(WhiteRoomFPS PRIVATE cxx_std_17)
+target_link_libraries(WhiteRoomFPS PRIVATE user32 gdi32)
